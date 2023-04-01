@@ -73,7 +73,7 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
+      name: "React Redux",
       icon: redux,
     },
     {
@@ -97,13 +97,17 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: 'python',
+      icon: javascript
     },
     {
-      name: "docker",
-      icon: docker,
+      name: 'postgreSQL',
+      icon: javascript
     },
+    {
+      name: 'flask',
+      icon: javascript
+    }
   ];
   
   const experiences = [
@@ -153,8 +157,8 @@ import {
       testimonial:
         "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
       name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+      designation: "Entrepreneur",
+      company: "n/a",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
@@ -198,20 +202,20 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Trugle Calender",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "description",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "supabase",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
@@ -219,17 +223,13 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "BinoBlendz",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A description",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",

@@ -38,7 +38,7 @@ const ComputersCanvas = () => {
   return (  
     <Canvas frameLoop="demand" shadows camera={{ position: [20, 3, 5], fov: 25}} gl={{ preserveDrawingBuffer: true }}> {/* Canvas/background to render the 3d model */}
       <Suspense fallback={<CanvasLoader />}> {/* Loading screen */}
-        <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2}/> {/* When rotating the 3d model this keeps it on a horizontal plane */}
+        <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} horizontal={true}/> {/* When rotating the 3d model this keeps it on a horizontal plane */}
         <Computers isMobile={isMobile}/> 
       </Suspense>
       <Preload all />
