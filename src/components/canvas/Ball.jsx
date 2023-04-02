@@ -12,15 +12,11 @@ const Ball = (props) => {
     setClicked(true)
   }
 
-  
-
-
   if(clicked) {
     return (
       <ParticleSystem position={[0, 0, 1]} />
     )
   }
-  
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2} onClick={handleClick}>
