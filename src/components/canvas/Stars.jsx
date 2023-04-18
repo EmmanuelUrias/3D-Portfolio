@@ -1,12 +1,17 @@
 import { useState, useRef, Suspense } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Points, PointMaterial, Preload, Sphere } from '@react-three/drei'
+import { Points, PointMaterial, Preload } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
 
 const Stars = (props) => {
   const ref = useRef()
 
-  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 })
+  const [sphere] = useState(() => random.inSphere(new Float32Array(2000), { radius: 1.2 }));
+
+  if (sphere.some(isNaN)) {
+    console.error('Error: sphere array contains NaN values');
+    return null;
+  }
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10
