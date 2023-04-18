@@ -13,6 +13,7 @@ import {
     nodejs,
     mongodb,
     git,
+    python,
     figma,
     docker,
     meta,
@@ -23,6 +24,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    postgresql,
+    flask
   } from "../assets";
   
   export const navLinks = [
@@ -98,15 +101,15 @@ import {
     },
     {
       name: 'python',
-      icon: javascript
+      icon: python
     },
     {
       name: 'postgreSQL',
-      icon: javascript
+      icon: postgresql
     },
     {
       name: 'flask',
-      icon: javascript
+      icon: flask
     }
   ];
   

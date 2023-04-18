@@ -6,20 +6,9 @@ import ParticleSystem from '../../utils/ParticleSystem'
 
 const Ball = (props) => {
   const [ decal ] = useTexture([props.imgUrl])
-  const [ clicked, setClicked ] = useState(false)
-
-  const handleClick = () => {
-    setClicked(true)
-  }
-
-  if(clicked) {
-    return (
-      <ParticleSystem position={[0, 0, 1]} />
-    )
-  }
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2} onClick={handleClick}>
+    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25}/>
       <directionalLight position={[0, 0, 0.05]}/>
       <mesh castShadow receiveShadow scale={2.75}>
