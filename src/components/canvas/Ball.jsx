@@ -1,8 +1,8 @@
-import React, { Suspense, useState } from 'react'
+import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei'
 import CanvasLoader from '../Loader'
-import ParticleSystem from '../../utils/ParticleSystem'
+
 
 const Ball = (props) => {
   const [ decal ] = useTexture([props.imgUrl])
